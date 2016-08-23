@@ -1,0 +1,129 @@
+<header ng-controller="UserController" scroll-spy>
+
+    <div class="navbar navbar-default navbar-static-top nv-fixed" >
+        <div class="container header-containe">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="text-align:left;margin-top:15px;padding: 0px;" href="index.html"><h4 style="font-family: pacificoregular !important;font-size:31px;color:#fff;">Sachin</h4></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+
+                <ul class="nav navbar-nav navbar-right nv-link">
+                    <li><a href="javascript:void(0);" class="btn btn-link head-btn"  ng-click="clickit(); displaySignUp = true" style="border:2px solid #fff;">View Stats</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+</header>
+
+
+
+<script>
+    $(document).ready(function(){
+       if($(window).width() > 769){
+           $(".head-logo").css('color', 'orangered');
+           $(".nv-link  a").css('color', '#fff');
+           $(".active  a").css('color', '#fff');
+           $(".head-btn").css('border', '2px solid #fff');
+       }else{
+           $(".head-logo").css('color', '#fff');
+           $(".nv-link  a").css('color', 'orangered');
+           $(".active  a").css('color', 'orangered');
+           $(".head-btn").css('border', '2px solid orangered');
+       }
+    });
+</script>
+<script>
+    $(window).scroll(function() {
+        if ($(this).width() > 769) {
+
+
+                if($(this).scrollTop() > 650) {
+                    $(".nv-fixed").css('background', '#fff');
+                    $(".nv-fixed").css('position', 'fixed');
+                    $(".nv-fixed").css('opacity', '1');
+                    $(".nv-fixed").css('transtion', 'all 0.5s ease-in-out 0s');
+                    $(".navbar-brand").css('padding', '0px');
+                    $(".navbar-brand h4").css('color', 'orangered');
+                    $(".nv-link  a").css('color', 'orangered');
+                    $(".active  a").css('color', 'orangered');
+                    $(".head-btn").css('border', '2px solid orangered');
+                    $(".head-logo").css('color', 'orangered');
+
+                }else{
+                    $(".nv-fixed").css('background', 'transparent');
+                    $(".nv-fixed").css('position', 'fixed');
+                    $(".nv-link  a").css('color', '#fff');
+                    $(".active  a").css('color', '#fff');
+                    $(".navbar-brand h4").css('color', '#fff');
+                    $(".head-btn").css('border', '2px solid #fff');
+                    $(".head-logo").css('color', '#fff');
+                    $(".bt-dropdown").css('color', '#58bcb9');
+
+                }
+
+
+        }else{
+            if($(this).scrollTop() > 50) {
+                $(".nv-fixed").css('background', '#fff');
+                $(".nv-fixed").css('position', 'fixed');
+                $(".nv-fixed").css('opacity', '1');
+                $(".nv-fixed").css('transtion', 'all 0.5s ease-in-out 0s');
+                $(".navbar-brand").css('padding', '0px');
+                $(".nv-link  a").css('color', '#58bcb9');
+                $(".active  a").css('color', '#58bcb9');
+                $(".head-btn").css('border', '2px solid orangered');
+                $(".head-logo").css('color', 'orangered');
+            }else{
+                $(".nv-fixed").css('background', '#fff');
+                $(".nv-fixed").css('position', 'fixed');
+                $(".nv-fixed").css('opacity', '1');
+                $(".nv-fixed").css('transtion', 'all 0.5s ease-in-out 0s');
+                $(".navbar-brand").css('padding', '0px');
+                $(".nv-link  a").css('color', '#58bcb9');
+                $(".active  a").css('color', '#58bcb9');
+                $(".head-btn").css('border', '2px solid orangered');
+                $(".head-logo").css('color', '#fff');
+            }
+        }
+        if($(this).scrollTop() > 500) {
+
+            $('.sec4').css('padding-top','80px');
+        }else{
+
+            $('.sec4').css('padding-top','50px');
+        }
+    });
+</script>
+<!--================================== ends here =====================================-->
+<style>
+
+    /*.ngdialog.ngdialog-theme-default{padding-top: 60px !important;overflow: hidden;}*/
+    /*@media(max-width:768px){*/
+        /*.ngdialog.ngdialog-theme-default{padding-top: 60px !important;overflow: hidden;}*/
+    /*}*/
+    .dropdown-menu{
+        top:32px;left:-3px !important;min-width:202px;
+    }
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+        background-color:transparent;
+    }
+    .fake-upload{
+        position: absolute;top: 0px;z-index: 99;opacity: 0;
+    }
+    .otpLI li{
+        width:60px !important;
+    }
+</style>
+<script>
+
+</script>
+
+
+

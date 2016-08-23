@@ -1,0 +1,49 @@
+<section>
+    <div class="full-width bg-truck" style="height: 50vh;">
+
+    </div>
+    <div class="full-width">
+        <div class="container-fluid">
+            <div class="full-width table-view">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th><b>Date</b></th>
+                        <th><b>Batting Score</b></th>
+                        <th><b>Batting Inning</b></th>
+                        <th><b>Opposition</b></th>
+                        <th><b>Ground</b></th>
+                        <th><b>Match Result</b></th>
+                        <th><b>Toss</b></th>
+                        <th><b>Result Margin</b></th>
+                        <th><b>Catches</b></th>
+                        <th><b>Wickets</b></th>
+                        <th><b>Runs Conceded</b></th>
+                        <th><b>Stumps</b></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="score in tableData">
+
+                        <td>{{score.date}}</td>
+                        <td class="text-center">{{score.batting_score}}</td>
+                        <td class="text-center">{{score.batting_innings}}</td>
+                        <td>{{score.opposition}}</td>
+                        <td>{{score.ground}}</td>
+                        <td class="text-center">{{score.match_result}}</td>
+                        <td>{{score.toss}}</td>
+                        <td class="text-center">{{score.result_margin}}</td>
+                        <td class="text-center">{{score.catches}}</td>
+                        <td class="text-center">{{score.wickets}}</td>
+                        <td class="text-center">{{score.runs_conceded}}</td>
+                        <td class="text-center">{{score.stumps}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <div id="container" style="height: 400px; min-width: 310px"></div>
+        </div>
+    </div>
+</section>
