@@ -7,6 +7,10 @@
 App.controller('WelcomeController', function ($scope, $http, $cookies, $cookieStore, $state) {
 //console.log(MY_CONSTANT.url);
 
+    $scope.clickit = function(){
+        $state.go('layout1.Statistics');
+    }
+
     var chart = new Chartist.Line('.ct-chart', {
         labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
         series: [

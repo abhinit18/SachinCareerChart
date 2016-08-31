@@ -471,13 +471,13 @@ Image credits: unsplash.com
     background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818);
+    background-image: url(http://t.wallpaperweb.org/wallpaper/sport/1920x1080/sachintendulkar1920x1080wallpaper5166.jpg);
 }
 .fade-carousel .slides .slide-2 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
+    background-image: url(http://1.bp.blogspot.com/-5b5bYH0Sjjk/UfaWcnbYQBI/AAAAAAAAXeY/zmARZ9Iqp0s/s1600/Sachin+Tendulkar+Wallpapers+2.jpg);
 }
 .fade-carousel .slides .slide-3 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+    background-image: url(https://mehtaworld.files.wordpress.com/2013/10/sachin-200.jpg);
 }
 
 /********************************/
@@ -498,4 +498,8 @@ Image credits: unsplash.com
 }
 .table-view{
     height:350px;overflow: auto;
+}
+
+.table th, td {
+    color:#fff !important;
 }
