@@ -5,6 +5,23 @@ App.controller('StatsController', function ($scope, $http, $cookies, $cookieStor
 //console.log(MY_CONSTANT.url);
 
 
+    $scope.mapp = function(){
+
+        $http({
+            method: 'GET',
+            url: 'vendor/sachin'
+
+        }).success(function(data){
+
+            $scope.tableData = data;
+        }).error(function(data){
+            console.log(data);
+        });
+    }
+    $scope.mapp();
+
+
+
 //    high charts //
 
     $(function () {
@@ -13,15 +30,15 @@ App.controller('StatsController', function ($scope, $http, $cookies, $cookieStor
 
 
             console.log(data);
-            $scope.tableData = data;
+
             console.log($scope.tableData);
             var battingScore = _.pluck(data, 'batting_score');
             var scoreDated = _.pluck(data, 'date');
             var catches = _.pluck(data, 'catches');
             var wickets = _.pluck(data, 'wickets');
             var stumps = _.pluck(data, 'stumps');
-            var result = _.pluck(data, 'match_result');
-
+            var MatchGround = _.pluck(data, 'ground');
+            var Grounds = _.uniq(MatchGround);
             // Create a timer
             var start = +new Date();
 
@@ -80,7 +97,13 @@ App.controller('StatsController', function ($scope, $http, $cookies, $cookieStor
 
                 }]
             });
+
         });
     });
+
+
+
+//    ======================================= New Chart ==================================== //
+
 
 });
